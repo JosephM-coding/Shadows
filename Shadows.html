@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Text Shadow Examples</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <style>
+        /* Simple Text Shadow */
+.simple-shadow {
+  text-shadow: 2px 2px #ff0000; /* Red shadow, 2px to the right, 2px down */
+}
+
+/* Text Shadow with Blur */
+.blurred-shadow {
+  text-shadow: 2px 2px 5px #000000; /* Black shadow with 5px blur */
+}
+
+/* Negative Offset Shadow */
+.negative-shadow {
+  text-shadow: -2px -2px 3px #0000ff; /* Blue shadow, 2px to the left and 2px above */
+}
+
+/* Multiple Shadows */
+.multiple-shadows {
+  text-shadow: 
+    1px 1px 2px black,   /* Black shadow */
+    0 0 1em blue,        /* Blue shadow */
+    0 0 0.2em blue;      /* Another blue shadow */
+  color: white;           /* White text color */
+}
+
+/* Glow Effect */
+.glow-effect {
+  color: #ffffff;        /* White text color */
+  text-shadow: 
+    0 0 5px #fff,        /* White glow */
+    0 0 10px #fff,       /* White glow */
+    0 0 20px #0ff,       /* Cyan glow */
+    0 0 30px #0ff,       /* Cyan glow */
+    0 0 40px #0ff;       /* Cyan glow */
+}
+
+/* 3D Text Effect */
+.text-3d {
+  color: #fafafa;         /* Light gray text color */
+  text-shadow: 
+    0 1px 0 #c9c9c9,     /* Shadow in 3D layers */
+    0 2px 0 #bbb,        
+    0 3px 0 #aaa,        
+    0 4px 0 #999,        
+    0 5px 0 #888,        
+    0 6px 1px rgba(0,0,0,.1),    
+    0 0 5px rgba(0,0,0,.1),       
+    0 1px 3px rgba(0,0,0,.3),     
+    0 3px 5px rgba(0,0,0,.2),     
+    0 5px 10px rgba(0,0,0,.25),   
+    0 10px 10px rgba(0,0,0,.2),   
+    0 20px 20px rgba(0,0,0,.15);  
+}
+
+/* Letterpress Effect */
+.letterpress {
+  color: #444;            /* Dark gray text color */
+  background: #f8f8f8;    /* Light gray background */
+  text-shadow: 1px 1px 1px #fff; /* White shadow creating letterpress effect */
+}
+
+/* Outline Text */
+.outline-text {
+  color: white;           /* White text */
+  text-shadow: 
+    -1px -1px 0 #000,     /* Outline shadow */
+    1px -1px 0 #000,      
+    -1px 1px 0 #000,      
+    1px 1px 0 #000;       /* Outline shadow in all four directions */
+}
+        /* Question 1: Red text shadow, 3px to the right, 2px down, 4px blur radius */
+.text-shadow-1 {
+  text-shadow: 3px 2px 4px red;
+}
+
+/* Question 2: Subtle shadow below the text, simulating light from above */
+.text-shadow-2 {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Question 3: Blue text with a white outline on a yellow background */
+.text-shadow-3 {
+  color: blue;
+  background-color: yellow;
+  text-shadow: 
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+/* Question 4: Neon magenta glow effect */
+.text-shadow-4 {
+  color: #ff00ff;
+  text-shadow: 
+    0 0 5px #ff00ff, 
+    0 0 10px #ff00ff, 
+    0 0 15px #ff00ff, 
+    0 0 20px #ff00ff;
+}
+
+/* Question 5: Black and gray shadows with specified offsets and blur */
+.text-shadow-5 {
+  text-shadow: 
+    2px 2px 0 black,   /* Black shadow with no blur */
+    4px 4px 5px gray;  /* Gray shadow with 5px blur */
+}
+
+  </style>
+</head>
+<body>
+
+  <h1 class="simple-shadow">Simple Text Shadow</h1>
+  <p class="simple-shadow">This text has a simple red shadow, 2px to the right and 2px below.</p>
+
+  <h1 class="blurred-shadow">Text Shadow with Blur</h1>
+  <p class="blurred-shadow">This text has a blurred black shadow, 2px to the right and 2px down, with a 5px blur radius.</p>
+
+  <h1 class="negative-shadow">Negative Offset Shadow</h1>
+  <p class="negative-shadow">This text has a blue shadow, 2px to the left and 2px above with a 3px blur radius.</p>
+
+  <h1 class="multiple-shadows">Multiple Shadows</h1>
+  <p class="multiple-shadows">This text has three shadows: black, blue, and blue with different blur effects.</p>
+
+  <h1 class="glow-effect">Glow Effect</h1>
+  <p class="glow-effect">This text has a glowing effect with white and cyan shades, creating a neon glow around it.</p>
+
+  <h1 class="text-3d">3D Text Effect</h1>
+  <p class="text-3d">This text has a 3D effect with multiple shadows creating depth.</p>
+
+  <h1 class="letterpress">Letterpress Effect</h1>
+  <p class="letterpress">This text appears to be slightly embedded into the page, creating a subtle letterpress effect.</p>
+
+  <h1 class="outline-text">Outline Text</h1>
+  <p class="outline-text">This text has a white outline on all four sides, making it stand out against the background.</p>
+
+  <!-- Additional Practice Questions -->
+
+  <h1 class="text-shadow-1">Red Shadow with Blur</h1>
+  <p class="text-shadow-1">This text has a red shadow, 3px to the right, 2px down, with a 4px blur radius.</p>
+
+  <h1 class="text-shadow-2">Subtle Light From Above</h1>
+  <p class="text-shadow-2">This text has a subtle shadow below it, simulating light shining from above.</p>
+
+  <h1 class="text-shadow-3">Blue Text with White Outline</h1>
+  <p class="text-shadow-3">This blue text has a white outline with no blur on a yellow background.</p>
+
+  <h1 class="text-shadow-4">Neon Glow Effect (Magenta)</h1>
+  <p class="text-shadow-4">This text has a neon glow effect in magenta with increasing blur radius.</p>
+
+  <h1 class="text-shadow-5">Black and Gray Shadows</h1>
+  <p class="text-shadow-5">This text has multiple shadows: one black with no blur, and another gray shadow with a 5px blur.</p>
+
+</body>
+</html>
